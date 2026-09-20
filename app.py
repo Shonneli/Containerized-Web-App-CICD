@@ -9,7 +9,7 @@ def home():
     count = redis_client.incr("visits")
     return f"""
     <h1>Docker Compose Demo</h1>
-    <p>Hello from the Flask container! Updated via CI/CD.</p>
+    <p>Hello from the Flask container! Updated from CI/CD.</p>
     <p>This page has been visited <strong>{count}</strong> times.</p>
     """
 
